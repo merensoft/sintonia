@@ -1,2 +1,4 @@
 # sintonia
-Small webside for sintonia socials
+
+Small website for sintonia socials dancing events
+
