@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,14 +25,24 @@
 </head>
 <body>
 <div class="container">
-    <h1>Welcome to My Static Website</h1>
-    <p>This is a basic static website with HTML, CSS, and JavaScript.</p>
-    <button id="clickMe">Click me</button>
+    <h1 style="text-align: center; width: 100%">Sintonia Socials</h1>
+    <p>Email for E-Tranfers: urbankiz.hfx@gmail.com</p>
+    <button id="clickMe" style="align-self: flex-end">Copy Email</button>
+    <!-- image in the middle that scale on mobile -->
+    <img src="./images/sintonia-pre-summer.jpg" alt="Sintonia Socials"
+         style="display: block; margin-left: auto; margin-right: auto; width: 100%; margin-top: 16px">
 </div>
 
 <script>
-    document.getElementById('clickMe').addEventListener('click', function() {
-        alert('Button clicked!');
+    document.getElementById('clickMe').addEventListener('click', function () {
+        navigator.clipboard.writeText("urbankiz.hfx@gmail.com")
+            .then(() => {
+                // Alert the user (optional)
+                alert('Email has been copied to clipboard');
+            })
+            .catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
     });
 </script>
 </body>
