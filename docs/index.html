@@ -21,17 +21,30 @@
         h1 {
             color: #333;
         }
+
+        .button {
+            background-color: #04AA6D; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
 <div class="container">
     <h1 style="text-align: center; width: 100%">Sintonia Socials</h1>
     <p>Email for E-Tranfers: urbankiz.hfx@gmail.com</p>
-    <button id="clickMe" style="align-self: flex-end">Copy Email</button>
+    <button id="clickMe" class="button">Copy Email</button>
     <!-- image in the middle that scale on mobile -->
     <img src="./images/sintonia-pre-summer.jpg" alt="Sintonia Socials"
          style="display: block; margin-left: auto; margin-right: auto; width: 100%; margin-top: 16px">
 </div>
+
 
 <script>
     document.getElementById('clickMe').addEventListener('click', function () {
